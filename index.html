@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NIKTELL | لینک‌های رسمی</title>
+    <style>
+      @font-face {
+        font-family: "Yekan Bakh";
+        src: url("fonts/woff2/YekanBakh-Thin.woff2") format("woff2"),
+          url("fonts/woff/YekanBakh-Thin.woff") format("woff");
+        font-weight: 100;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Yekan Bakh";
+        src: url("fonts/woff2/YekanBakh-Light.woff2") format("woff2"),
+          url("fonts/woff/YekanBakh-Light.woff") format("woff");
+        font-weight: 300;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Yekan Bakh";
+        src: url("fonts/woff2/YekanBakh-Regular.woff2") format("woff2"),
+          url("fonts/woff/YekanBakh-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Yekan Bakh";
+        src: url("fonts/woff2/YekanBakh-SemiBold.woff2") format("woff2"),
+          url("fonts/woff/YekanBakh-SemiBold.woff") format("woff");
+        font-weight: 600;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Yekan Bakh";
+        src: url("fonts/woff2/YekanBakh-Bold.woff2") format("woff2"),
+          url("fonts/woff/YekanBakh-Bold.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Yekan Bakh";
+        src: url("fonts/woff2/YekanBakh-ExtraBold.woff2") format("woff2"),
+          url("fonts/woff/YekanBakh-ExtraBold.woff") format("woff");
+        font-weight: 800;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Yekan Bakh";
+        src: url("fonts/woff2/YekanBakh-Black.woff2") format("woff2"),
+          url("fonts/woff/YekanBakh-Black.woff") format("woff");
+        font-weight: 900;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Yekan Bakh";
+        src: url("fonts/woff2/YekanBakh-ExtraBlack.woff2") format("woff2"),
+          url("fonts/woff/YekanBakh-ExtraBlack.woff") format("woff");
+        font-weight: 950;
+        font-style: normal;
+      }
+      /* استفاده از فونت Peyda با وزن 700 (پررنگ) */
+      /* پالت رنگی جدید بر اساس #879a7c */
+      :root {
+        --primary: #879a7c; /* رنگ پایه */
+        --primary-dark: #6b7d61; /* ۲۰% تیره‌تر */
+        --primary-light: #a4b398; /* ۲۰% روشن‌تر */
+        --accent: #c4d0b5; /* رنگ مکمل */
+        --text: #2d3029; /* متن اصلی */
+        --background: #f5f7f2; /* پس‌زمینه */
+      }
+
+      /* Reset Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Yekan Bakh", Tahoma, sans-serif;
+      }
+
+      /* Background & Global Styles */
+      body {
+        font-family: "Yekan Bakh", Tahoma, sans-serif;
+        font-weight: 400;
+        background: var(--background);
+        color: var(--text);
+        min-height: 100vh;
+        padding: 1rem;
+        line-height: 1.6;
+        background-color: #f5f7f2;
+      }
+
+      /* Container */
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .logo {
+        width: 200px; /* تنظیم اندازه لوگو */
+        height: auto;
+        margin-bottom: 1rem;
+        margin: 0 auto;
+      }
+
+      /* پروفایل شرکت */
+      .profile {
+        margin: 2rem 0;
+        padding: 1.5rem;
+        background: white;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 3px solid var(--primary);
+        margin-bottom: 1rem;
+        object-fit: cover;
+      }
+
+      .profile h1 {
+        color: var(--primary-dark);
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+        font-weight: 800;
+      }
+
+      .profile p {
+        color: var(--primary);
+        font-size: 0.95rem;
+        max-width: 80%;
+        margin: 0 auto;
+      }
+
+      /* دکمه‌های لینک */
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .link-btn {
+        background: var(--primary);
+        color: white;
+        padding: 1.2rem;
+        border-radius: 12px;
+        text-decoration: none;
+        border: 2px solid var(--primary-dark);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
+        font-weight: 600;
+      }
+
+      .link-btn:hover {
+        transform: translateY(-3px);
+        background: var(--primary-dark);
+        box-shadow: 0 6px 15px rgba(135, 154, 124, 0.25);
+      }
+
+      /* آیکون‌ها */
+      .icon {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) invert(1);
+      }
+
+      /* بخش معرفی */
+      .bio-placeholder {
+        background: var(--accent);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        color: var(--text);
+        font-size: 0.95rem;
+        border: 1px solid var(--primary-light);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- پروفایل شرکت -->
+      <div class="profile">
+        <img src="picture.jpg" alt="لوگو نیکتل" class="profile-img" />
+        <div class="logo">
+          <svg
+            id="Layer_2"
+            data-name="Layer 2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 473.46 202.07"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #7d7c7c;
+                }
+
+                .cls-1,
+                .cls-2 {
+                  stroke-width: 0px;
+                }
+
+                .cls-2 {
+                  fill: #3f5e5a;
+                }
+              </style>
+            </defs>
+            <g id="Layer_1-2" data-name="Layer 1">
+              <path
+                class="cls-1"
+                d="m447.34,26.34c1.3-.05,2.6,0,3.91,0,0-2.71,0-5.42,0-8.13,0-11.22-6.95-18.19-18.14-18.21-14.06-.02-28.12-.02-42.18.01-1.73,0-3.5.07-5.17.46-7.98,1.88-12.98,8.52-12.99,17.23,0,2.86,0,5.71,0,8.57.15,0,.29,0,.44,0,1.14,0,2.29.02,3.43.02v-.02h70.71v.04Zm-22.47-13.21c-.16.71-1.43,1.64-2.24,1.68-3.62.18-7.24.08-10.87.08s-6.94.11-10.4-.08c-.81-.04-2.08-.96-2.24-1.68-.32-1.45.87-1.99,2.24-1.99,7.09,0,14.18,0,21.27,0,1.37,0,2.55.54,2.23,1.99Z"
+              />
+              <path
+                class="cls-1"
+                d="m447.18,149.77h0s-70.31,0-70.31,0h0s-3.85,0-3.85,0c0,2.66,0,5.33,0,7.99,0,11.14,6.91,18.09,18.03,18.11,13.98.02,27.96.02,41.94,0,11.12-.02,18.06-6.96,18.06-18.08,0-2.67,0-5.34,0-8.01h-3.88Zm-35.21,18.71c-2.99-.05-5.52-2.61-5.51-5.58.01-2.97,2.56-5.53,5.54-5.54,2.98-.02,5.55,2.47,5.62,5.46.08,3.03-2.6,5.72-5.65,5.66Z"
+              />
+              <path
+                class="cls-2"
+                d="m81.87,149.82h-20.63L23.69,77.84v71.98H.03V26.32h20.63l37.55,71.98V26.32h23.66v123.5Z"
+              />
+              <path
+                class="cls-2"
+                d="m113.85,149.82h-22.28V60.37h22.28v89.45Z"
+              />
+              <path
+                class="cls-2"
+                d="m113.85,49.48h-22.28v-23.18h22.28v23.18Z"
+              />
+              <path
+                class="cls-2"
+                d="m205.88,149.82h-27.51l-30.54-56.46v56.46h-23.52V26.32h23.52v54.87l29.44-54.87h26.27l-33.29,59.81,35.63,63.69Z"
+              />
+              <path
+                class="cls-2"
+                d="m251.38,149.82h-23.62V44.23h-22.66v-17.94h68.94v17.94h-22.66v105.59Z"
+              />
+              <path
+                class="cls-2"
+                d="m344.75,149.82h-65.38V26.32h65.67v28.58h-42.15v19.05h31.36v26.99h-31.36v20.47h41.85v28.41Z"
+              />
+              <path
+                class="cls-2"
+                d="m373.09,149.82h-22.42V26.32h22.42v123.5Z"
+              />
+              <path
+                class="cls-2"
+                d="m473.46,149.82h-22.42V26.32h22.42v123.5Z"
+              />
+              <g>
+                <path
+                  class="cls-1"
+                  d="m283.8,195.68c-1.63,0-2.95,1.32-2.95,2.95s1.32,2.95,2.95,2.95,2.95-1.32,2.95-2.95-1.32-2.95-2.95-2.95Z"
+                />
+                <circle class="cls-1" cx="261" cy="198.63" r="2.95" />
+                <circle class="cls-1" cx="252.66" cy="198.63" r="2.95" />
+                <circle class="cls-1" cx="160.69" cy="198.63" r="2.95" />
+                <circle class="cls-1" cx="173.45" cy="161.31" r="2.95" />
+                <circle class="cls-1" cx="152.35" cy="198.63" r="2.95" />
+                <circle class="cls-1" cx="97.08" cy="162.1" r="2.95" />
+                <circle class="cls-1" cx="88.73" cy="162.1" r="2.95" />
+                <path
+                  class="cls-1"
+                  d="m173.97,169.78h-1.35c-1.1,0-2,.9-2,2v13.43h-11.65v-13.43c0-1.1-.9-2-2-2h-1.35c-1.1,0-2,.9-2,2v13.43h-12.24v-5.79c0-2.85-2.24-5.16-5.05-5.32v-.03h-26.69c.13-.28.26-.55.42-.81,3.2-6.6,9.09-6.58,15.24-5.9v-5.27c-14.2-1.67-22.88,6.57-21,17.31h.4v.03h31.32v5.79h-41.24v-13.39c0-1.1-.9-2-2-2h-1.35c-1.1,0-2,.9-2,2v13.39h-11.3v-21.84c0-1.1-.9-2-2-2h-1.35c-1.1,0-2,.9-2,2v21.84H2c-1.1,0-2,.9-2,2v1.35c0,1.1.9,2,2,2h168.77v-.04c2.88-.09,5.2-2.44,5.2-5.34v-13.41c0-1.1-.9-2-2-2Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m263.49,169.81h-1.35c-1.1,0-2,.9-2,2v13.4h-18.09v-21.84c0-1.1-.9-2-2-2h-1.35c-1.1,0-2,.9-2,2v21.84h-42.74c-1.1,0-2,.9-2,2v1.35c0,1.1.9,2,2,2h66.18s.06,0,.1,0h.19v-.02c2.82-.15,5.07-2.47,5.07-5.33v-13.41c0-1.1-.9-2-2-2Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m287.59,169.79h-1.35c-1.1,0-2,.9-2,2v13.41h-8.72s0,0-.01,0v-21.2c0-1.1-.9-2-2-2h-1.35c-1.1,0-2,.9-2,2v21.2c0,2.96,2.4,5.35,5.35,5.35h0s0,0,.01,0h8.72s0,0,0,0c2.96,0,5.35-2.4,5.35-5.35v-13.41c0-1.1-.9-2-2-2Z"
+                />
+                <path
+                  class="cls-1"
+                  d="m340.68,169.79h-1.35s-9.44,0-9.44,0h-1.35c-2.21,0-4,1.79-4,4v11.41h-8.41v-11.42c0-2.21-1.79-4-4-4h-1.35s-9.31,0-9.31,0h0s-1.35,0-1.35,0c-2.21,0-4,1.79-4,4v12.77c0,2.21,1.79,4,4,4h1.18s.24,0,.24,0h8.68s-.04.08-.06.12c-3.2,6.6-9.09,6.58-15.24,5.9v5.27c11.39,1.34,19.23-3.7,20.91-11.29h12.68s.03,0,.05,0h1.35s10.23,0,10.23,0h0s.56,0,.56,0c2.21,0,4-1.79,4-4v-12.77c0-2.21-1.79-4-4-4Zm-39.23,15.42v-10.05h9.31v10.05h-9.31Zm28.43-10.05h9.44v10.05h-9.44v-10.05Z"
+                />
+              </g>
+            </g>
+          </svg>
+        </div>
+        <p>پیشرو در فناوری‌های ارتباطی نوین</p>
+
+        <!-- بخش معرفی (جای خالی) -->
+        <div class="bio-placeholder">[توضیحات شرکت اینجا قرار می‌گیرد]</div>
+      </div>
+
+      <!-- دکمه‌های لینک -->
+      <div class="links">
+        <a href="https://niktell.ir" class="link-btn">
+          <!-- <img src="icons/10x/website.png" class="icon" alt="وبسایت" />-->
+          وبسایت رسمی
+        </a>
+
+        <a href="https://instagram.com/niktell" class="link-btn">
+          <!-- <img src="icons/10x/instagram.png" class="icon" alt="اینستاگرام" />-->
+          اینستاگرام
+        </a>
+
+        <a href="https://linkedin.com/company/niktell" class="link-btn">
+          <!-- <img src="icons/10x/linkedin.png" class="icon" alt="لینکدین" />-->
+          کانال واتس اپ
+        </a>
+
+        <a href="https://t.me/niktell" class="link-btn">
+          <!-- <img src="icons/10x/telegram.png" class="icon" alt="تلگرام" />-->
+          کانال تلگرام
+        </a>
+
+        <a href="mailto:info@niktell.ir" class="link-btn">
+          <!--  <img src="icons/10x/email.png" class="icon" alt="ایمیل" />-->
+          تماس از طریق ایمیل
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
