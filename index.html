@@ -106,7 +106,7 @@
         text-align: center;
       }
       .logo {
-        width: 200px; /* تنظیم اندازه لوگو */
+        width: 300px; /* تنظیم اندازه لوگو */
         height: auto;
         margin-bottom: 1rem;
         margin: 0 auto;
@@ -122,6 +122,7 @@
       }
 
       .profile-img {
+        display: none;
         width: 120px;
         height: 120px;
         border-radius: 50%;
@@ -189,6 +190,41 @@
         color: var(--text);
         font-size: 0.95rem;
         border: 1px solid var(--primary-light);
+      }
+      /*css جدید*/
+      /* رفع مشکل فاصله با استفاده از موقعیت مطلق */
+      .under-construction {
+        position: relative;
+      }
+
+      .under-construction .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        color: #000 !important;
+      }
+
+      .under-construction:hover .original-text {
+        opacity: 0; /* جایگزین display: none برای حفظ فضای دکمه */
+      }
+
+      .under-construction:hover .hover-text {
+        display: block;
+      }
+
+      /* تغییرات هاور فقط برای دکمه‌های مشخص شده */
+      .link-btn.under-construction:hover {
+        background: #808080 !important;
+        border-color: #666 !important;
+      }
+
+      /* بازنشانی استایل برای دکمه‌های بدون تغییر */
+      .link-btn:not(.under-construction):hover {
+        transform: translateY(-3px);
+        background: var(--primary-dark);
+        box-shadow: 0 6px 15px rgba(135, 154, 124, 0.25);
       }
     </style>
   </head>
@@ -296,32 +332,41 @@
         <p>پیشرو در فناوری‌های ارتباطی نوین</p>
 
         <!-- بخش معرفی (جای خالی) -->
-        <div class="bio-placeholder">[توضیحات شرکت اینجا قرار می‌گیرد]</div>
+        <div class="bio-placeholder">
+          <strong>فروشگاه نیکتل</strong> جهت راحتی دسترسی شما عزیزان امکان خرید حضوری و آنلاین را فراهم کرده و با ارائه بالا ترین کیفیت و کم ترین قیمت پذیرای شما عزیزان هستیم. </br>
+ جهت خرید و پشتیبانی از طریق درگاه های زیر اقدام فرمایید:
+        </div>
       </div>
 
       <!-- دکمه‌های لینک -->
       <div class="links">
-        <a href="https://niktell.ir" class="link-btn">
-          <!-- <img src="icons/10x/website.png" class="icon" alt="وبسایت" />-->
-          وبسایت رسمی
+        <!-- دکمه‌های با قابلیت "در دست ساخت" -->
+        <a href="#" class="link-btn under-construction">
+          <span class="original-text">وبسایت رسمی</span>
+          <span class="hover-text">بزودی !</span>
         </a>
 
-        <a href="https://instagram.com/niktell" class="link-btn">
-          <!-- <img src="icons/10x/instagram.png" class="icon" alt="اینستاگرام" />-->
-          اینستاگرام
+        <a href="#" class="link-btn under-construction">
+          <span class="original-text">اینستاگرام</span>
+          <span class="hover-text">بزودی !</span>
         </a>
 
-        <a href="https://linkedin.com/company/niktell" class="link-btn">
+        <!-- همین الگو را برای سایر دکمه‌ها تکرار کنید -->
+
+        <a
+          href="https://chat.whatsapp.com/FdguXJqj0xLCLd3asyCMy3"
+          class="link-btn"
+        >
           <!-- <img src="icons/10x/linkedin.png" class="icon" alt="لینکدین" />-->
           کانال واتس اپ
         </a>
 
-        <a href="https://t.me/niktell" class="link-btn">
+        <a href="https://t.me/Niktell_mobile" class="link-btn">
           <!-- <img src="icons/10x/telegram.png" class="icon" alt="تلگرام" />-->
           کانال تلگرام
         </a>
 
-        <a href="mailto:info@niktell.ir" class="link-btn">
+        <a href="mailto:niktell.tech@gmail.com" class="link-btn">
           <!--  <img src="icons/10x/email.png" class="icon" alt="ایمیل" />-->
           تماس از طریق ایمیل
         </a>
