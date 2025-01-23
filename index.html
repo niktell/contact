@@ -100,18 +100,38 @@
       }
 
       /* Container */
-      .container {
+      /*.container {
         max-width: 600px;
         margin: 0 auto;
         text-align: center;
       }
-      .logo {
-        width: 300px; /* تنظیم اندازه لوگو */
+      */  
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 1rem; /* جلوگیری از چسبیدن به لبه در موبایل */
+      }
+
+      /*.logo {
+        width: 300px; 
         height: auto;
         margin-bottom: 1rem;
         margin: 0 auto;
       }
+      */
 
+      .logo {
+        width: 80%; /* تغییر از 300px به درصد */
+        max-width: 400px; /* جلوگیری از بزرگ شدن بیش از حد */
+        height: auto;
+        margin: 0 auto 1rem; /* مرکزسازی افقی */
+      }
+
+      .logo svg {
+        width: 100%; /* پر کردن کامل عرض والد */
+        height: auto; /* حفظ نسبت ابعاد */
+      }
       /* پروفایل شرکت */
       .profile {
         margin: 2rem 0;
